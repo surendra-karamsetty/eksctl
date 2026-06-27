@@ -32,3 +32,10 @@ mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$P
 echo "checking the kubectl version"
 
 kubectl version --client 
+
+
+echo "Installing k9s"
+
+curl -sS https://webinstall.dev/k9s | bash
+
+echo "Instalation done"
